@@ -26,6 +26,7 @@ doskey rm      = del $*
 doskey rmr     = deltree $*
 doskey sudo    = runas /user:administrator $*
 
+
 :: Easier navigation
 rem alias o      = start $*
 rem alias oo     = start .
@@ -56,7 +57,10 @@ rem  doskey cd=mycd $*
 @echo off
 DOSKEY ls=dir
 DOSKEY sublime="C:\Program Files\Sublime Text 3\sublime_text.exe" $*
-rem DOSKEY vi="C:\Program Files (x86)\Vim\vim80\gvim.exe" $*
-DOSKEY vi="C:\Program Files (x86)\WinVi\WinVi32.exe"
+DOSKEY vi="C:\Program Files (x86)\Vim\vim80\gvim.exe" $*
+rem DOSKEY vi="C:\Program Files (x86)\WinVi\WinVi32.exe"
 DOSKEY vim="C:\Program Files (x86)\Vim\vim80\gvim.exe" $*
-DOSKEY np="C:\Program Files (x86)\Notepad++" $*
+DOSKEY np="C:\Program Files (x86)\Notepad++\notepad++.exe" $*
+DOSKEY x=exit
+
+cd C:\
