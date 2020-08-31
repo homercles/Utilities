@@ -7,9 +7,13 @@
 # Hardlink created for D:\Source\Personal\Utilities\Powershell\Microsoft.PowerShell_profile.ps1 <<===>> D:\Users\guts\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1
 
 
+if ($IsMacOS -or $env:WT_Session)	{
+	Import-Module posh-git
+	Import-Module oh-my-posh
+	Set-Theme Paradox
+}
 
-Import-Module posh-git
-Import-Module oh-my-posh
-Set-Theme Paradox
-
-Screenfetch
+Import-Module PSReadLine
+Set-Alias -Name vi -Value vim
+# CA 1/9/2020 Have removed screenfetch as it's not compatible with PS v7
+# Screenfetch
